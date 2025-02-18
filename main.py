@@ -3,7 +3,7 @@ import sqlite3
 import pandas as pd
 from html_css import *
 
-st.set_page_config(initial_sidebar_state="collapsed", page_title='P961', layout="centered", page_icon='lebanon.png')
+st.set_page_config(initial_sidebar_state="collapsed", page_title='PlatesLB', layout="centered", page_icon='lebanon.png')
 st.markdown(hide_streamlit_items, unsafe_allow_html=True)
 
 db_file_path = "plates.db"
@@ -60,7 +60,7 @@ def search_db(conn, actual_nb, code):
 
 # Streamlit app
 def main():
-    st.title("Plate961")
+    st.title("PlatesLB")
 
     # Connect to the SQLite database
     conn = connect_to_db(db_file_path)
@@ -101,6 +101,7 @@ def main():
 **Address:** {row['Addresse']}
                     """
                     right_markdown = f"""
+**Plate Number:** {row['CodeDesc']} {row['ActualNB']}              
 **Car Description:** {row['MarqueDesc']} {row['TypeDesc']}  
 **Model Year:** {row['PRODDATE']}  
 **Chassis#:** {row['Chassis']}  
