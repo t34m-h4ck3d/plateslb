@@ -79,7 +79,7 @@ def main():
         # Input field for Plate Number
         actual_nb = st.text_input("Plate Number")
 
-    st.text("*Please note that this data is from 2023")
+
 
     # Search button
     if st.button("Search"):
@@ -115,6 +115,8 @@ def main():
                         st.markdown(right_markdown)
             else:
                 st.error("No results found.")
+
+    st.markdown("<i>*Please note that this data is from 2023</i>", unsafe_allow_html=True)
 
     # Close the connectio
     conn.close()
