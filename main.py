@@ -4,7 +4,7 @@ import pandas as pd
 from html_css import *
 
 st.set_page_config(initial_sidebar_state="collapsed", page_title='PlatesLB', layout="centered", page_icon='lebanon.png')
-# st.markdown(hide_streamlit_items, unsafe_allow_html=True)
+st.markdown(hide_streamlit_items, unsafe_allow_html=True)
 
 db_file_path = "plates.db"
 
