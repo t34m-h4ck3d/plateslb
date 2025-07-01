@@ -116,10 +116,12 @@ def main():
             else:
                 st.error("No results found.")
 
-    st.markdown("<i>*Please note that this data is from 2023</i>", unsafe_allow_html=True)
 
     # Close the connectio
     conn.close()
+
+    st.markdown("<i>*Please note that this data is from 2023</i>", unsafe_allow_html=True)
+
 
 
 if __name__ == "__main__":
