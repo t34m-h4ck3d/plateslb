@@ -79,6 +79,8 @@ def main():
         # Input field for Plate Number
         actual_nb = st.text_input("Plate Number")
 
+    st.text("*Please note that this data is from 2023")
+
     # Search button
     if st.button("Search"):
         if not actual_nb:
