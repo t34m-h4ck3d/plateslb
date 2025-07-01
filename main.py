@@ -120,7 +120,7 @@ def main():
     # Close the connectio
     conn.close()
 
-    st.markdown("<i>*Please note that this data is from 2023</i>", unsafe_allow_html=True)
+    st.markdown("<i>*Please note that this data is from 2023 ~ T34M H4CK3D</i>", unsafe_allow_html=True)
 
 
 
